@@ -172,7 +172,7 @@ def create_pdf(ticker, pe, de, summary):
 
 # Streamlit App UI
 st.set_page_config(page_title="NSE Finance Dashboard", layout="centered")
-st.title("📈 Auto Financial Report Generator")
+st.title("📈 Financial Health Report ")
 
 # Top-right contact info using columns
 col1, col2 = st.columns([3, 1])  # 3:1 ratio to push content to right
