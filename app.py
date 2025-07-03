@@ -141,14 +141,14 @@ ticker = st.selectbox("Select company", sorted(ALL_TICKERS))
 def generate_summary(ticker, pe, de):
     summary = [f"**{ticker} Financial Snapshot**"]
     if pe is not None:
-        if pe > 40:
+        if pe > 25:
             summary.append("🔴 Very high P/E — likely overvalued")
         elif pe < 10:
             summary.append("🟢 Low P/E — possibly undervalued")
         else:
             summary.append("🟡 Fairly valued based on P/E")
     if de is not None:
-        if de > 1:
+        if de > 2:
             summary.append("🔴 High debt-to-equity — leverage risk")
         else:
             summary.append("🟢 Healthy leverage")
